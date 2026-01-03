@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Support · MapLink Router</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src https://challenges.cloudflare.com; frame-ancestors 'none'; base-uri 'none'; form-action https://submit-form.com;"
+    >
+    <meta
+      name="description"
+      content="Support for MapLink Router: setup help, troubleshooting, and questions."
+    >
+    <link rel="icon" href="../assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/app-icon.png">
+    <link rel="apple-touch-icon" href="../assets/app-icon.png">
+    <link rel="stylesheet" href="../../tokens.css">
+    <link rel="stylesheet" href="../landing.css">
+  </head>
+  <body>
+    <header class="mlr-site-header">
+      <div class="mlr-container mlr-nav">
+        <div class="mlr-wordmark">
+          <span class="mlr-wordmark-badge">
+            <img
+              class="mlr-wordmark-icon"
+              src="../assets/app-icon.png"
+              alt="MapLink Router icon"
+              width="38"
+              height="38"
+            >
+          </span>
+          <span class="mlr-wordmark-text">MapLink Router</span>
+        </div>
+        <button
+          class="mlr-nav-toggle"
+          type="button"
+          data-mlr-nav-toggle
+          aria-expanded="false"
+          aria-controls="mlr-primary-nav"
+          aria-label="Toggle navigation"
+        >
+          <span class="mlr-nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="mlr-nav-links" aria-label="Primary" id="mlr-primary-nav" data-mlr-nav-links>
+          <a class="mlr-nav-link" href="https://maplinkrouter.sigmology.ch/#how-it-works">How it works</a>
+          <a class="mlr-nav-link" href="https://maplinkrouter.sigmology.ch/#supported">Supported links</a>
+          <a class="mlr-nav-link" href="https://maplinkrouter.sigmology.ch/#faq">FAQ</a>
+          <a class="mlr-nav-link" href="https://maplinkrouter.sigmology.ch/privacy/">Privacy</a>
+          <a class="mlr-nav-link" href="https://maplinkroutertest.sigmology.ch/">
+            Test page
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="mlr-hero">
+        <div class="mlr-container">
+          <div class="mlr-hero-card">
+            <p class="mlr-section-title">Support</p>
+            <h1 class="mlr-title">Support</h1>
+            <p class="mlr-subtitle">Help with setup, troubleshooting, or questions.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mlr-section">
+        <div class="mlr-container">
+          <p class="mlr-section-title">Quick help</p>
+          <h2 class="mlr-subtitle">Common questions before you reach out.</h2>
+          <div class="mlr-faq">
+            <details class="mlr-card" open>
+              <summary>Does it work outside Safari?</summary>
+              <p>No. MapLink Router only works in Safari with the extension enabled.</p>
+            </details>
+            <details class="mlr-card">
+              <summary>Why didn’t a link redirect?</summary>
+              <p>
+                The link may be unsupported, the website is not allowed in Safari settings, or redirects are disabled
+                in extension options.
+              </p>
+              <p>
+                If you chose <strong>Selected Websites</strong>, MapLink Router runs only on sites you explicitly
+                allow.
+              </p>
+            </details>
+            <details class="mlr-card">
+              <summary>What about Private Browsing?</summary>
+              <p>
+                Safari may disable extensions in Private Browsing unless you enable “Allow in Private Browsing.”
+                Test in a normal tab first.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="mlr-section">
+        <div class="mlr-container">
+          <p class="mlr-section-title">Contact</p>
+          <h2 class="mlr-subtitle">Contact support</h2>
+          <div class="mlr-card">
+            <p>
+              If something isn’t working as expected, send us a message. We usually reply within 1–2 business days.
+            </p>
+            <div class="mlr-support-status" data-status="sent" hidden>
+              <strong>Message sent.</strong> Thanks for reaching out. We will reply soon.
+            </div>
+            <div class="mlr-support-status mlr-support-status--error" data-status="error" hidden>
+              <strong>Something went wrong.</strong> Please try again or email us directly.
+            </div>
+            <form
+              class="mlr-support-form"
+              action="https://submit-form.com/fIJcVgAz2"
+              method="POST"
+            >
+              <label class="mlr-support-field">
+                <span>Your email</span>
+                <input type="email" name="email" required autocomplete="email">
+              </label>
+              <label class="mlr-support-field">
+                <span>Message</span>
+                <textarea name="message" rows="6" required></textarea>
+              </label>
+
+              <input type="hidden" name="app" value="MapLink Router">
+              <input type="hidden" name="_email.subject" value="[MapLink Router] Support request">
+              <input
+                type="hidden"
+                name="_redirect"
+                value="https://maplinkrouter.sigmology.ch/support?sent=1"
+              >
+              <input
+                type="hidden"
+                name="_error"
+                value="https://maplinkrouter.sigmology.ch/support?error=1"
+              >
+
+              <div class="mlr-honeypot" aria-hidden="true">
+                <label>
+                  Leave this empty
+                  <input name="_honeypot" autocomplete="off">
+                </label>
+              </div>
+
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAACKP8-B6Tye23MlO"></div>
+
+              <button class="mlr-button mlr-button--primary" type="submit">
+                Send message
+              </button>
+            </form>
+            <p class="mlr-muted">
+              Prefer email? Write to
+              <a class="mlr-nav-link" href="mailto:support@sigmology.ch">support@sigmology.ch</a>.
+            </p>
+
+            <h3>Billing &amp; refunds</h3>
+            <p>
+              Purchases and refunds are handled by Apple. To request a refund, use
+              <a class="mlr-nav-link" href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
+            </p>
+
+            <h3>Privacy note</h3>
+            <p>
+              Support messages are used only to respond to your request. No tracking or analytics are used on this
+              site.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mlr-footer">
+      <div class="mlr-container mlr-footer-content">
+        <div>
+          <strong>Privacy:</strong> No analytics, no telemetry, no tracking.
+          Link handling stays on-device.
+        </div>
+        <div class="mlr-footer-links" aria-label="Footer">
+          <a class="mlr-nav-link" href="https://maplinkrouter.sigmology.ch/privacy/">Privacy</a>
+          <a class="mlr-nav-link" href="https://maplinkrouter.sigmology.ch/support/">Support</a>
+          <a class="mlr-nav-link" href="https://maplinkroutertest.sigmology.ch/">
+            Test page
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="../nav.js" defer></script>
+    <script type="module" src="support.js"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  </body>
+</html>
